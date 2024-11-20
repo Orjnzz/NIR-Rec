@@ -7,3 +7,5 @@ The Next-Item Recommendation with Zero-Shot (NIR) method is a prompting strategy
 
 This approach enables LLM to provide effective recommendations without training but high performance.
 
+---
+![architecture_nir](gpt_rec_main.jpg)
