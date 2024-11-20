@@ -4,5 +4,6 @@ The Next-Item Recommendation with Zero-Shot (NIR) method is a prompting strategy
 - Capture user's preference prompt.
 - Selecte representative items prompt.
 - Generate recommendations.
+
 This approach enables LLM to provide effective recommendations without training but high performance.
 
