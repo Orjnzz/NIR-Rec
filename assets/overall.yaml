@@ -1,0 +1,6 @@
+data:
+  length_limit: 8
+  num_candidates: 20
+
+random_seed: 2023
+
