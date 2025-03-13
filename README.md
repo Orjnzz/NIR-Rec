@@ -45,5 +45,5 @@ python main.py
 ## Feedback
 For feedbacks or issues about project please contact with me: 
 ```
-ngochaoclhd@gmail.com
+haongoc.nguyen2004@gmail.com
 ```
