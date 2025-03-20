@@ -6,7 +6,6 @@ def preprocess_data(data_ml_100k):
     u_item_p, i_item_p = 0, 0
     user_list, i_item_user_dict = [], {}
 
-    # Create user and item dictionaries
     for elem in data_ml_100k:
         seq_list = elem[0].split(' | ')
         for movie in seq_list:
@@ -20,7 +19,6 @@ def preprocess_data(data_ml_100k):
                 i_item_p += 1
             i_item_user_dict[movie][data_ml_100k.index(elem)] += 1
 
-    # Create user and item matrices
     user_matrix = np.array([
         [1 if movie in elem[0].split(' | ') else 0 for movie in u_item_dict]
         for elem in data_ml_100k
@@ -28,8 +26,8 @@ def preprocess_data(data_ml_100k):
     item_matrix = np.array([i_item_user_dict[movie] for movie in i_item_id_list])
 
     return (
-        np.dot(user_matrix, user_matrix.T),  # user_matrix_sim
-        np.dot(item_matrix, item_matrix.T),  # item_matrix_sim
+        np.dot(user_matrix, user_matrix.T), 
+        np.dot(item_matrix, item_matrix.T),  
         u_item_dict, i_item_dict, i_item_id_list
     )
 
