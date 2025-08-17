@@ -41,9 +41,3 @@ Run `main.py` to follow the process and results of the model
 ```bash
 python main.py
 ```
-
-## Feedback
-For feedbacks or issues about project please contact with me: 
-```
-haongoc.nguyen2004@gmail.com
-```
